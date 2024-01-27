@@ -11,9 +11,8 @@ body,
 }
 
 body {
-  font-family: system-ui;
   margin: 0;
-  /* background-color: black; */
+  overflow: hidden;
   background: linear-gradient(to bottom, #000000, #001F3F);
 }
 
@@ -28,7 +27,6 @@ body {
 
 *::-webkit-scrollbar {
   width: 0;
-
 }
 
 .sel-no {

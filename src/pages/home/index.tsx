@@ -3,68 +3,53 @@ import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
 import MainTitle from '../../components/main-title'
 import MainContent from '../../components/main-content'
 
-// Little helpers ...
-const url = (name: string, wrap = false) =>
-  `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
-
 export default function index() {
   const parallax = useRef<IParallax>(null!)
   return (
     <div style={{ width: '100%', height: '100%', background: '#253237' }}>
       <Parallax ref={parallax} pages={4}>
-        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: `transparent` }} />
-        <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: 'transparent' }} />
-        <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: 'transparent' }} />
 
         <ParallaxLayer
           offset={0}
           speed={0}
           factor={3}
           style={{
-            backgroundImage: url('stars', true),
+            backgroundImage: `url('/stars.webp')`,
             backgroundSize: 'cover',
           }}
         />
-
-        <ParallaxLayer offset={1.1} speed={-0} style={{ pointerEvents: 'none', opacity: 0.6 }}>
-          <img style={{ width: '9%', marginLeft: '80%' }} src={'/logos/react-2.svg'} />
-        </ParallaxLayer>
         <ParallaxLayer offset={1.7} speed={.4} style={{ pointerEvents: 'none', opacity: 0.3 }}>
-          <img style={{ width: '7%', marginLeft: '10%' }} src={'/logos/js.svg'} />
+          <img style={{ width: '7%', marginLeft: '10%' }} src={'/logos/js.webp'} />
         </ParallaxLayer>
         <ParallaxLayer offset={1.6} speed={.3} style={{ pointerEvents: 'none', opacity: 0.3 }}>
-          <img style={{ width: '9%', marginLeft: '50%' }} src={'/logos/expo.svg'} />
+          <img src={'/logos/netlify.webp'} style={{ width: '10%', marginLeft: '80%', marginTop: '10%' }} />
+          <img style={{ width: '9%', marginLeft: '70%' }} src={'/logos/expo.webp'} />
         </ParallaxLayer>
         <ParallaxLayer offset={1.4} speed={-0} style={{ pointerEvents: 'none', opacity: 0.2 }}>
-          <img style={{ width: '9%', marginLeft: '90%' }} src={'/logos/nginx.svg'} />
+          <img style={{ width: '9%', marginLeft: '90%' }} src={'/logos/nginx.webp'} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.3 }}>
-          <img src={'/logos/css.svg'} style={{ display: 'block', width: '7%', marginLeft: '65%', marginTop: '10%' }} />
-          <img src={'/logos/git.svg'} style={{ display: 'block', width: '10%', marginLeft: '15%', marginTop: '10%' }} />
-        </ParallaxLayer>
 
         <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.4 }}>
-          <img src={'/logos/next.svg'} style={{ display: 'block', width: '14%', marginLeft: '30%' }} />
-          <img src={'/logos/sassv2.svg'} style={{ display: 'block', width: '20%', marginLeft: '50%' }} />
+          <img src={'/logos/sassv2.webp'} style={{ width: '20%', marginLeft: '40%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.5 }}>
-          <img src={'/logos/redux.svg'} style={{ display: 'block', width: '17%', marginLeft: '10%', marginTop: '0%' }} />
-          <img src={'/logos/nodejs.svg'} style={{ display: 'block', width: '20%', marginLeft: '65%' }} />
+        <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.5 }}>
+          <img src={'/logos/redux.webp'} style={{ width: '17%', marginLeft: '10%', }} />
+          <img src={'/logos/nodejs.webp'} style={{ width: '20%', marginLeft: '65%' }} />
+          <img src={'/logos/css.webp'} style={{ width: '7%', marginLeft: '65%' }} />
+          <img src={'/logos/git.webp'} style={{ width: '10%', marginLeft: '20%', }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.6} speed={0.2} style={{ opacity: 0.2 }}>
-          <img src={'/logos/netlify.svg'} style={{ display: 'block', width: '10%', marginLeft: '80%', marginTop: '10%' }} />
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.95} speed={0.4} style={{ opacity: 0.4 }}>
-          <img src={'/logos/tailwind.svg'} style={{ display: 'block', width: '13%', marginLeft: '10%' }} />
+        <ParallaxLayer offset={1.1} speed={0.4} style={{ opacity: 0.4 }}>
+          <img src={'/logos/tailwind.webp'} style={{ width: '13%', marginLeft: '40%' }} />
         </ParallaxLayer>
         <ParallaxLayer offset={1.1} speed={0.1} style={{ opacity: 0.3 }}>
-          <img src={'/logos/mongodb.svg'} style={{ display: 'block', width: '20%', marginLeft: '25%' }} />
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.1} speed={0.1} style={{ opacity: 0.3 }}>
-          <img src={'/logos/ts.svg'} style={{ display: 'block', width: '7%', marginLeft: '55%' }} />
+          <img style={{ width: '9%', marginLeft: '80%' }} src={'/logos/react-2.webp'} />
+          <img src={'/logos/ts.webp'} style={{ width: '7%', marginLeft: '55%' }} />
+          <img src={'/logos/mongodb.webp'} style={{ width: '20%', marginLeft: '25%' }} />
+          <img src={'/logos/next.webp'} style={{ width: '14%', marginLeft: '40%' }} />
+
         </ParallaxLayer>
 
         <ParallaxLayer
