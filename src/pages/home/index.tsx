@@ -8,7 +8,6 @@ export default function index() {
   return (
     <div style={{ width: '100%', height: '100%', background: '#253237' }}>
       <Parallax ref={parallax} pages={4}>
-
         <ParallaxLayer
           offset={0}
           speed={0}
@@ -18,38 +17,32 @@ export default function index() {
             backgroundSize: 'cover',
           }}
         />
-        <ParallaxLayer offset={1.7} speed={.4} style={{ pointerEvents: 'none', opacity: 0.3 }}>
-          <img style={{ width: '7%', marginLeft: '10%' }} src={'/logos/js.webp'} />
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.6} speed={.3} style={{ pointerEvents: 'none', opacity: 0.3 }}>
-          <img src={'/logos/netlify.webp'} style={{ width: '10%', marginLeft: '80%', marginTop: '10%' }} />
-          <img style={{ width: '9%', marginLeft: '70%' }} src={'/logos/expo.webp'} />
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.4} speed={-0} style={{ pointerEvents: 'none', opacity: 0.2 }}>
-          <img style={{ width: '9%', marginLeft: '90%' }} src={'/logos/nginx.webp'} />
-        </ParallaxLayer>
-
-
-        <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.4 }}>
-          <img src={'/logos/sassv2.webp'} style={{ width: '20%', marginLeft: '40%' }} />
-        </ParallaxLayer>
-
         <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.5 }}>
-          <img src={'/logos/redux.webp'} style={{ width: '17%', marginLeft: '10%', }} />
-          <img src={'/logos/nodejs.webp'} style={{ width: '20%', marginLeft: '65%' }} />
-          <img src={'/logos/css.webp'} style={{ width: '7%', marginLeft: '65%' }} />
-          <img src={'/logos/git.webp'} style={{ width: '10%', marginLeft: '20%', }} />
-        </ParallaxLayer>
+          <div style={{ width: '100%', height: '100%' }} className='absolute'>
+            <img className='absolute' src={'/logos/redux.webp'} style={{ width: '17%', bottom: '10px', left: '10px' }} />
+            <img className='absolute' src={'/logos/nodejs.webp'} style={{ width: '20%', bottom: '20px', right: '20px' }} />
+            <img className='absolute' src={'/logos/css.webp'} style={{ width: '7%', top: '10px', left: '30px' }} />
+            <img className='absolute' src={'/logos/git.webp'} style={{ width: '10%', top: '20px', right: '45px' }} />
+            <img className='absolute' style={{ width: '7%', top: '40%', left: '10%' }} src={'/logos/js.webp'} />
 
+          </div>
+        </ParallaxLayer>
         <ParallaxLayer offset={1.1} speed={0.4} style={{ opacity: 0.4 }}>
-          <img src={'/logos/tailwind.webp'} style={{ width: '13%', marginLeft: '40%' }} />
+          <div style={{ width: '100%', height: '100%' }} className='absolute'>
+            <img className='absolute' src={'/logos/tailwind.webp'} style={{ width: '13%', bottom: '20%', left: '46%' }} />
+            <img className='absolute' src={'/logos/sassv2.webp'} style={{ width: '20%', top: '-15%', left: '40%' }} />
+            <img className='absolute' src={'/logos/netlify.webp'} style={{ width: '7%', top: '-10%', left: '20%' }} />
+            <img className='absolute' src={'/logos/expo.webp'} style={{ width: '9%', top: '-14%', right: '20%' }} />
+            <img className='absolute' style={{ width: '9%', top: '25%', right: '10%' }} src={'/logos/nginx.webp'} />
+          </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.1} speed={0.1} style={{ opacity: 0.3 }}>
-          <img style={{ width: '9%', marginLeft: '80%' }} src={'/logos/react-2.webp'} />
-          <img src={'/logos/ts.webp'} style={{ width: '7%', marginLeft: '55%' }} />
-          <img src={'/logos/mongodb.webp'} style={{ width: '20%', marginLeft: '25%' }} />
-          <img src={'/logos/next.webp'} style={{ width: '14%', marginLeft: '40%' }} />
-
+        <ParallaxLayer offset={1.1} speed={0.8} style={{ opacity: .7 }}>
+          <div style={{ width: '100%', height: '100%' }} className='absolute'>
+            <img className='absolute' src={'/logos/ts.webp'} style={{ width: '13%', top: '10%', left: '22%' }} />
+            <img className='absolute' src={'/logos/mongodb.webp'} style={{ width: '20%', bottom: '20%', right: '20%' }} />
+            <img className='absolute' src={'/logos/next.webp'} style={{ width: '10%', bottom: '20%', left: '25%' }} />
+            <img className='absolute' src={'/logos/react-2.webp'} style={{ width: '9%', top: '20px', right: '30%' }} />
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer

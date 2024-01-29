@@ -12,6 +12,7 @@ body,
 
 body {
   margin: 0;
+  position: fixed;
   overflow: hidden;
   background: linear-gradient(to bottom, #000000, #001F3F);
 }
@@ -47,4 +48,8 @@ body {
 
 .pointer {
   cursor: pointer;
+}
+
+.absolute {
+  position: absolute;
 }
