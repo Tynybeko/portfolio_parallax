@@ -7,8 +7,8 @@ export default function index() {
   const parallax = useRef<IParallax>(null!)
   return (
     <div style={{ width: '100%', height: '100%', background: '#253237' }}>
-      <Parallax ref={parallax} pages={4}>
-        <ParallaxLayer
+      <Parallax horizontal={true} ref={parallax} pages={4}>
+        {/* <ParallaxLayer
           offset={0}
           speed={0}
           factor={3}
@@ -16,7 +16,7 @@ export default function index() {
             backgroundImage: `url('/stars.webp')`,
             backgroundSize: 'cover',
           }}
-        />
+        /> */}
         <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.5 }}>
           <div style={{ width: '100%', height: '100%' }} className='absolute'>
             <img src={'/logos/redux.webp'} style={{ position: 'absolute', width: '17%', bottom: '10px', left: '10px' }} />
@@ -29,18 +29,18 @@ export default function index() {
         </ParallaxLayer>
         <ParallaxLayer offset={1.1} speed={0.4} style={{ opacity: 0.4 }}>
           <div style={{ width: '100%', height: '100%' }} className='absolute'>
-            <img src={'/logos/tailwind.webp'} style={{ position: 'absolute', width: '13%', bottom: '20%', left: '46%' }} />
-            <img src={'/logos/sassv2.webp'} style={{ position: 'absolute', width: '20%', top: '-15%', left: '40%' }} />
-            <img src={'/logos/netlify.webp'} style={{ position: 'absolute', width: '7%', top: '-10%', left: '20%' }} />
-            <img src={'/logos/expo.webp'} style={{ position: 'absolute', width: '9%', top: '-14%', right: '20%' }} />
-            <img style={{ position: 'absolute', width: '9%', top: '25%', right: '10%' }} src={'/logos/nginx.webp'} />
+            <img src={'/logos/tailwind.webp'} style={{ position: 'absolute', width: '13%', bottom: '10%', left: '46%' }} />
+            <img src={'/logos/sassv2.webp'} style={{ position: 'absolute', width: '20%', top: '3%', left: '37%' }} />
+            <img src={'/logos/netlify.webp'} style={{ position: 'absolute', width: '7%', bottom: '30%', left: '15%' }} />
+            <img src={'/logos/expo.webp'} style={{ position: 'absolute', width: '9%', bottom: '5%', left: '20%' }} />
+            <img style={{ position: 'absolute', width: '9%', top: '30%', right: '15%' }} src={'/logos/nginx.webp'} />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={1.1} speed={0.8} style={{ opacity: .7 }}>
           <div style={{ position: 'absolute', width: '100%', height: '100%' }} className='absolute'>
-            <img src={'/logos/ts.webp'} style={{ position: 'absolute', width: '13%', top: '10%', left: '22%' }} />
-            <img src={'/logos/mongodb.webp'} style={{ position: 'absolute', width: '20%', bottom: '20%', right: '20%' }} />
-            <img src={'/logos/next.webp'} style={{ position: 'absolute', width: '10%', bottom: '20%', left: '25%' }} />
+            <img src={'/logos/ts.webp'} style={{ position: 'absolute', width: '13%', top: '10%', left: '12%' }} />
+            <img src={'/logos/mongodb.webp'} style={{ position: 'absolute', width: '15%', bottom: '30%', right: '30%' }} />
+            <img src={'/logos/next.webp'} style={{ position: 'absolute', width: '10%', bottom: '20%', left: '35%' }} />
             <img src={'/logos/react-2.webp'} style={{ position: 'absolute', width: '9%', top: '20px', right: '30%' }} />
           </div>
         </ParallaxLayer>
@@ -51,22 +51,21 @@ export default function index() {
           style={{
             opacity: .6
           }}>
-          <img className='neon-box' src={'/sites/screenCrypto.png'} style={{ display: 'block', width: '27%', marginLeft: '75%' }} />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.2} speed={0.15} style={{ opacity: 0.5 }}>
-          <img src={'/sites/screen23.webp'} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
+        <ParallaxLayer offset={2} speed={0.6} style={{ opacity: .7 }}>
+          <div style={{ position: 'absolute', width: '100%', height: '100%' }} className='absolute'>
+            <img className='neon-box' src={'/sites/screenCrypto.png'} style={{ position: 'absolute', display: 'block', width: '27%', top: '10%', right: '5%' }} />
+            <img src={'/sites/screen23.webp'} style={{ position: 'absolute', display: 'block', width: '10%', bottom: '10%', left: '5%' }} />
+            <img src={'/sites/transit1.webp'} style={{ position: 'absolute', display: 'block', width: '20%', left: '30%', bottom: '10%' }} />
+          </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.2} speed={0.1} style={{ opacity: 0.8 }}>
-          <img src={'/sites/transit1.webp'} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.7} speed={0.2} style={{ opacity: 0.6 }}>
-          <img src={'/sites/Coca.png'} style={{ display: 'block', width: '22%', marginLeft: '5%' }} />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.7} speed={0.3} style={{ opacity: 0.8 }}>
-          <img src={'/sites/airdrop.png'} style={{ display: 'block', width: '18%', marginLeft: '40%' }} />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.1} speed={0.3} style={{ opacity: 0.6 }}>
-          <img src={'/sites/sierra.png'} style={{ display: 'block', width: '10%', marginLeft: '40%' }} />
+
+        <ParallaxLayer offset={2} speed={1} style={{ opacity: .7 }}>
+          <div style={{ position: 'absolute', width: '100%', height: '100%' }} className='absolute'>
+            <img src={'/sites/Coca.png'} style={{ position: 'absolute', display: 'block', width: '22%', top: '10%', left: '5%' }} />
+            <img src={'/sites/airdrop.png'} style={{ position: 'absolute', display: 'block', width: '18%', bottom: '20%', right: '10%' }} />
+            <img src={'/sites/sierra.png'} style={{ position: 'absolute', display: 'block', width: '10%', top: '10%', left: '40%' }} />
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -77,6 +76,8 @@ export default function index() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            backgroundImage: `url('/stars.webp')`,
+            backgroundSize: 'cover',
           }}>
           <MainTitle />
         </ParallaxLayer>
@@ -89,6 +90,8 @@ export default function index() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            backgroundImage: `url('/stars.webp')`,
+            backgroundSize: 'cover',
           }}>
           <div className='sel-no'>
             <h1 className='neon-text'>my stacks</h1>
@@ -103,7 +106,9 @@ export default function index() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            opacity: 0.8
+            opacity: 0.8,
+            backgroundImage: `url('/stars.webp')`,
+            backgroundSize: 'cover',
           }}
           onClick={() => parallax.current.scrollTo(3)}>
           <MainContent />
@@ -115,31 +120,26 @@ export default function index() {
             opacity: 0.8,
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
           }}
           onClick={() => parallax.current.scrollTo(0)}>
           <h1 className='neon-text'>Contacts</h1>
         </ParallaxLayer>
-
-        <ParallaxLayer offset={3.7} speed={0.7} style={{ opacity: 0.9, zIndex: 15, }}>
-          <a href="https://github.com/Tynybeko">
-            <img className='pointer' src={'/contacts/github.svg'} style={{ position: 'relative', width: '10%', marginLeft: '40%', zIndex: 100 }} />
-          </a>
-        </ParallaxLayer>
-        <ParallaxLayer offset={3.2} speed={1.5} style={{ opacity: 0.6, zIndex: 10 }}>
-          <a href="https://www.instagram.com/zhanybekov.2/">
-            <img className='pointer' src={'/contacts/instagram.svg'} style={{ width: '9%', marginLeft: '30%', zIndex: 100 }} />
-          </a>
-        </ParallaxLayer>
-        <ParallaxLayer offset={3.6} speed={1} style={{ opacity: 0.9, zIndex: 12 }}>
-          <a href="https://twitter.com/TZhanybekov219">
-            <img className='pointer' src={'/contacts/twitter.svg'} style={{ width: '9%', marginLeft: '80%', zIndex: 100 }} />
-          </a>
-        </ParallaxLayer>
-        <ParallaxLayer offset={3.5} speed={1} style={{ opacity: 0.5, zIndex: 10 }}>
-          <a href="tel:+996559020199">
-            <img className='pointer' src={'/contacts/phone.svg'} style={{ width: '9%', marginLeft: '10%', zIndex: 100 }} />
-          </a>
+        <ParallaxLayer offset={3} speed={1} style={{ opacity: .7, zIndex: 0 }}>
+          <div style={{ position: 'absolute', width: '100%', height: '100%', }} className='absolute'>
+            <a style={{ position: 'absolute', zIndex: 100, bottom: '10%', left: '20%', width: '12%' }} href="https://www.instagram.com/zhanybekov.2/">
+              <img src={'/contacts/instagram.svg'} style={{ cursor: 'pointer', width: '100%', }} />
+            </a>
+            <a style={{ position: 'absolute', zIndex: 100, top: '20%', left: '30%', width: '10%' }} href="tel:+996559020199">
+              <img src={'/contacts/phone.svg'} style={{ cursor: 'pointer', width: '100%', }} />
+            </a>
+            <a style={{ position: 'absolute', zIndex: 100, width: '12%', top: '10%', right: '10%' }} href="https://github.com/Tynybeko">
+              <img src={'/contacts/github.svg'} style={{ cursor: 'pointer', position: 'relative', width: '100%', }} />
+            </a>
+            <a style={{ position: 'absolute', zIndex: 100, width: '9%', bottom: '30%', right: '20%' }} href="https://twitter.com/TZhanybekov219">
+              <img src={'/contacts/twitter.svg'} style={{ cursor: 'pointer', width: '100%', }} />
+            </a>
+          </div>
         </ParallaxLayer>
 
       </Parallax>
