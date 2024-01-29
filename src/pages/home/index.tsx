@@ -19,29 +19,29 @@ export default function index() {
         />
         <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.5 }}>
           <div style={{ width: '100%', height: '100%' }} className='absolute'>
-            <img className='absolute' src={'/logos/redux.webp'} style={{ width: '17%', bottom: '10px', left: '10px' }} />
-            <img className='absolute' src={'/logos/nodejs.webp'} style={{ width: '20%', bottom: '20px', right: '20px' }} />
-            <img className='absolute' src={'/logos/css.webp'} style={{ width: '7%', top: '10px', left: '30px' }} />
-            <img className='absolute' src={'/logos/git.webp'} style={{ width: '10%', top: '20px', right: '45px' }} />
-            <img className='absolute' style={{ width: '7%', top: '40%', left: '10%' }} src={'/logos/js.webp'} />
+            <img src={'/logos/redux.webp'} style={{ position: 'absolute', width: '17%', bottom: '10px', left: '10px' }} />
+            <img src={'/logos/nodejs.webp'} style={{ position: 'absolute', width: '20%', bottom: '20px', right: '20px' }} />
+            <img src={'/logos/css.webp'} style={{ position: 'absolute', width: '7%', top: '10px', left: '30px' }} />
+            <img src={'/logos/git.webp'} style={{ position: 'absolute', width: '10%', top: '20px', right: '45px' }} />
+            <img style={{ position: 'absolute', width: '7%', top: '40%', left: '10%' }} src={'/logos/js.webp'} />
 
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={1.1} speed={0.4} style={{ opacity: 0.4 }}>
           <div style={{ width: '100%', height: '100%' }} className='absolute'>
-            <img className='absolute' src={'/logos/tailwind.webp'} style={{ width: '13%', bottom: '20%', left: '46%' }} />
-            <img className='absolute' src={'/logos/sassv2.webp'} style={{ width: '20%', top: '-15%', left: '40%' }} />
-            <img className='absolute' src={'/logos/netlify.webp'} style={{ width: '7%', top: '-10%', left: '20%' }} />
-            <img className='absolute' src={'/logos/expo.webp'} style={{ width: '9%', top: '-14%', right: '20%' }} />
-            <img className='absolute' style={{ width: '9%', top: '25%', right: '10%' }} src={'/logos/nginx.webp'} />
+            <img src={'/logos/tailwind.webp'} style={{ position: 'absolute', width: '13%', bottom: '20%', left: '46%' }} />
+            <img src={'/logos/sassv2.webp'} style={{ position: 'absolute', width: '20%', top: '-15%', left: '40%' }} />
+            <img src={'/logos/netlify.webp'} style={{ position: 'absolute', width: '7%', top: '-10%', left: '20%' }} />
+            <img src={'/logos/expo.webp'} style={{ position: 'absolute', width: '9%', top: '-14%', right: '20%' }} />
+            <img style={{ position: 'absolute', width: '9%', top: '25%', right: '10%' }} src={'/logos/nginx.webp'} />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={1.1} speed={0.8} style={{ opacity: .7 }}>
-          <div style={{ width: '100%', height: '100%' }} className='absolute'>
-            <img className='absolute' src={'/logos/ts.webp'} style={{ width: '13%', top: '10%', left: '22%' }} />
-            <img className='absolute' src={'/logos/mongodb.webp'} style={{ width: '20%', bottom: '20%', right: '20%' }} />
-            <img className='absolute' src={'/logos/next.webp'} style={{ width: '10%', bottom: '20%', left: '25%' }} />
-            <img className='absolute' src={'/logos/react-2.webp'} style={{ width: '9%', top: '20px', right: '30%' }} />
+          <div style={{ position: 'absolute', width: '100%', height: '100%' }} className='absolute'>
+            <img src={'/logos/ts.webp'} style={{ position: 'absolute', width: '13%', top: '10%', left: '22%' }} />
+            <img src={'/logos/mongodb.webp'} style={{ position: 'absolute', width: '20%', bottom: '20%', right: '20%' }} />
+            <img src={'/logos/next.webp'} style={{ position: 'absolute', width: '10%', bottom: '20%', left: '25%' }} />
+            <img src={'/logos/react-2.webp'} style={{ position: 'absolute', width: '9%', top: '20px', right: '30%' }} />
           </div>
         </ParallaxLayer>
 
