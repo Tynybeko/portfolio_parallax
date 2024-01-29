@@ -8,15 +8,6 @@ export default function index() {
   return (
     <div style={{ width: '100%', height: '100%', background: '#253237' }}>
       <Parallax horizontal={true} ref={parallax} pages={4}>
-        {/* <ParallaxLayer
-          offset={0}
-          speed={0}
-          factor={3}
-          style={{
-            backgroundImage: `url('/stars.webp')`,
-            backgroundSize: 'cover',
-          }}
-        /> */}
         <ParallaxLayer offset={1} speed={1} style={{ opacity: 0.5 }}>
           <div style={{ width: '100%', height: '100%' }} className='absolute'>
             <img src={'/logos/redux.webp'} style={{ position: 'absolute', width: '17%', bottom: '10px', left: '10px' }} />
